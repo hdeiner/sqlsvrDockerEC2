@@ -2,6 +2,7 @@
 
 # create the test infrasctucture
 cd terraform
+terraform init
 terraform apply -auto-approve
 export SQLSVR=$(echo `terraform output sqlsvr_dns`)
 cd ..
